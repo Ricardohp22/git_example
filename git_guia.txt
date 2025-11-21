@@ -1,0 +1,61 @@
+CONFIGURACION
+git config --global user.name "Nombre"
+git config --global user.email
+
+INICIALIZAR
+git init
+
+AGREGAR AL STAGE (working directory -> staging area -> local repository)
+git add <nombre archivo>
+git add . --> Agrega todos los archivos modificados al stage
+
+CONOCER EL ESTATUS
+git status
+
+FIJAR VERSION
+git commit -m "comentario breve" --> guarda la version usando los archivos en stage
+
+CONSULTAR HISTORIAL DE COMMITS
+git log
+
+CONFIGURACION DE GITHUB
+GitHub es una plataforma basada en git para crear repositorios remotos y trabajar de manera colaborativa con otros programadores
+
+Crear nuevo repositorio
+nuevo repositorio --> descripción -->publico/privado
+
+AGREGAR PROYECTO A REPOSITORIO GITHUB
+git remote add origin <ruta del repositorio>
+
+CONSULTAR REPOSITORIO VINCULADO
+git remote -v
+
+SUBIR PROYECTO POR PRIMERA VEZ A REPOSITORIO
+git push origin
+
+SUBIR ACTUALIZACIONES 
+git push
+
+BAJAR ACTUALIZACIONES
+git pull origin master
+
+COMANDOS DE AYUDA DE ALGUN COMANDO GIT
+git help 
+
+BORRAR TODOS LOS CAMBIOS DE ARCHIVOS NO TRACKEADOS (Investigar mas a fondo sobre este tema)
+git clean -f 
+Nota: El comando elimina los archivos no trackeados lo cual resulta peligroso ya que se eliminarían los archivos del .gitignore que son necesarios para el proyecto
+
+git clean -n -> solo informa los archivos que eliminaría
+
+
+PASAR DEL STAGING AREA AL WORKING DIRECTORY
+git reset HEAD <archivo>
+
+PASAR DEL LOCAL REPOSITORY AL STAGIN AREA (Investigar mas de este tema)
+git revert <identificador del commit> --> Este comando elimina los cambios del commit referenciado y los posteriores
+--> Posterior a la eliminación de los cambios el proyecto quedará en el working directory por lo que es recomendado pasar inmediatamente al stagig area y hacer ocmmit indicando que se ha realizado un reevert
+--> después de hacer el revert el historial de cambios se sigue conservando, simplemente cambia el proyecto a como estaba en el ultimo commit antes del revert
+
+MOVER O RENOMBRAR ARCHIVOS CON CIERTAS FUNCIONALIDADES DE GIT
+git mv <nombre_anterior.txt> <nombre_nuevo.txt> -->Esta función cambia el archivo y lo agrega en automatico al stagin area
