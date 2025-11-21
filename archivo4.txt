@@ -1,8 +1,2 @@
 agregando archivo 4
-<<<<<<< HEAD
 agrega otra linea
-agregando linea 3
-agregando linea 4
-=======
-agrega otra linea
->>>>>>> parent of 4fbc682 (agregando linea 3)
