@@ -15,7 +15,7 @@ git status
 FIJAR VERSION
 git commit -m "comentario breve" --> guarda la version usando los archivos en stage
 
-CONSULTAR HISTORIAL DE COMMITS
+CONSULTAAR HISTORIAL DE COMMITS
 git log
 
 CONFIGURACION DE GITHUB
