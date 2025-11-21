@@ -59,3 +59,15 @@ git revert <identificador del commit> --> Este comando elimina los cambios del c
 
 MOVER O RENOMBRAR ARCHIVOS CON CIERTAS FUNCIONALIDADES DE GIT
 git mv <nombre_anterior.txt> <nombre_nuevo.txt> -->Esta función cambia el archivo y lo agrega en automatico al stagin area
+
+CONSULTAR RAMAS
+git branch
+
+CREAR UNA NUEVA RAMA
+git branch <new_rama>
+
+MOVERSE A UNA RAMA O A UN COMMIT ESPECIFICO
+git checkout <rama/commit>
+
+CREAR UNA NUEVA RAMA Y COLOCARSE EN ELLA
+git checkout -b <new_rama>
