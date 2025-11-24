@@ -71,3 +71,20 @@ git checkout <rama/commit>
 
 CREAR UNA NUEVA RAMA Y COLOCARSE EN ELLA
 git checkout -b <new_rama>
+
+MERGE
+git merge <rama> --> Jala y combina la "rama" a la rama en la que se encuentra programadores
+
+Ejemplos cuando se esta parado en main y se quiere hacer merge de la "rama"
+Caso 1:
+Si se hace merge y en main no se hizo ningun cambio el merge es muy facil ya que solo agrega todos los cambios a main
+__.__.        main
+      \.__.   rama
+
+merge ↓
+__.__._.__.   main
+      \.__.   rama
+
+Caso 2:
+__.__._.        main
+      \.__.   rama
